@@ -7,6 +7,7 @@ import NotFound from '../views/error/NotFound'
 import UserAccountLoginView from "@/views/user/account/UserAccountLoginView";
 import UserAccountRegisterView from "@/views/user/account/UserAccountRegisterView";
 import store from "../store/index"
+import ProblemsetIndexView from "@/views/problemset/ProblemsetIndexView";
 
 
 const routes = [
@@ -24,6 +25,14 @@ const routes = [
         component: PkIndexView,
         meta: {
             requestAuth: true,
+        }
+    },
+    {
+        path: "/problemset/",
+        name: "problemset_index",
+        component: ProblemsetIndexView,
+        meta: {
+            requestAuth: false,
         }
     },
     {
