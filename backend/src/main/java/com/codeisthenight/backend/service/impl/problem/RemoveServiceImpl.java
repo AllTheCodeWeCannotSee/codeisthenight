@@ -34,7 +34,7 @@ public class RemoveServiceImpl implements RemoveService {
             return map;
         }
 
-        if (!problem.getId().equals(user.getId())) {
+        if (!problem.getAuthor().equals(user.getId())) {
             map.put("error_message", "没有权限删除该题目");
             return map;
         }

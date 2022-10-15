@@ -26,7 +26,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {{ $store.state.user.username }}
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="margin:0">
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="margin-left: -30px" >
               <router-link class="dropdown-item" :to="{name: 'user_bot_index'}">我的Bot</router-link>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#" @click="logout">退出</a></li>

@@ -38,7 +38,7 @@ public class AddServiceImpl implements AddService {
         String description = data.get("description");
         String input = data.get("input");
         String output = data.get("output");
-        String examples = data.get("examples");
+        String examples = data.get("example");
         String difficulty_string = data.get("difficulty");
         int difficulty = Integer.parseInt(data.get("difficulty"));
         String hint = data.get("hint");

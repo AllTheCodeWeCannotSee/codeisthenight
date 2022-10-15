@@ -32,7 +32,7 @@ const routes = [
         name: "problemset_index",
         component: ProblemsetIndexView,
         meta: {
-            requestAuth: false,
+            requestAuth: true,
         }
     },
     {
