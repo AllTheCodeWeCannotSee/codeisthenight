@@ -26,7 +26,7 @@ public class GetListAllServiceImpl implements GetListAllService {
         UserDetailsImpl loginUser = (UserDetailsImpl) authentication.getPrincipal();
         User user = loginUser.getUser();
 
-       
+
 
 
         return problemMapper.selectList(null);
