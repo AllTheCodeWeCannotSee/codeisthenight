@@ -7,7 +7,8 @@ import NotFound from '../views/error/NotFound'
 import UserAccountLoginView from "@/views/user/account/UserAccountLoginView";
 import UserAccountRegisterView from "@/views/user/account/UserAccountRegisterView";
 import store from "../store/index"
-import ProblemsetIndexView from "@/views/problemset/ProblemsetIndexView";
+import ProblemUserIndexView from "@/views/problem/ProblemUserIndexView";
+import ProblemPublicIndexView from "@/views/problem/ProblemPublicIndexView";
 
 
 const routes = [
@@ -28,9 +29,17 @@ const routes = [
         }
     },
     {
-        path: "/problemset/",
-        name: "problemset_index",
-        component: ProblemsetIndexView,
+        path: "/problem/user",
+        name: "problemUser_index",
+        component: ProblemUserIndexView,
+        meta: {
+            requestAuth: true,
+        }
+    },
+    {
+        path: "/problem/public",
+        name: "problemPublic_index",
+        component: ProblemPublicIndexView,
         meta: {
             requestAuth: true,
         }

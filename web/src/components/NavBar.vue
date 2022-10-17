@@ -11,7 +11,7 @@
             <router-link :class="route_name == 'pk_index' ? `nav-link active` : 'nav-link'" :to="{name: 'pk_index'}">对战</router-link>
           </li>
           <li class="nav-item">
-            <router-link :class="route_name == 'problemset_index' ? 'nav-link active' : 'nav-link'" :to="{name: 'problemset_index'}">题库</router-link>
+            <router-link :class="route_name == 'problemPublic_index' ? 'nav-link active' : 'nav-link'" :to="{name: 'problemPublic_index'}">题库</router-link>
           </li>
           <li class="nav-item" >
             <router-link :class="route_name == 'record_index' ? 'nav-link active' : 'nav-link'" :to="{name: 'record_index'}">对局列表</router-link>
@@ -26,8 +26,8 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {{ $store.state.user.username }}
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="margin-left: -30px" >
-              <router-link class="dropdown-item" :to="{name: 'user_bot_index'}">我的Bot</router-link>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="margin: auto">
+              <router-link class="dropdown-item" :to="{name: 'problemUser_index'}">我的题目</router-link>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#" @click="logout">退出</a></li>
             </ul>
